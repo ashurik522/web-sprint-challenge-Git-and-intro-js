@@ -245,11 +245,16 @@ Use copy to do the following:
 🌟 EXAMPLE of return: ["Amedeo Modigliani", "Vasiliy Kandinskiy", "Diego Rivera"....]
 */
 
-function listOfNames(/*Your Code Here*/) {
-  /*Your Code Here*/
+function listOfNames(array) {
+  let newArray = [...array];
+  let nameArray = [];
+  for (let i = 0; i < newArray.length; i++){
+    nameArray.push(newArray[i].name)
+  }
+  return nameArray;
 }
 
-
+console.log(listOfNames(artists))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
